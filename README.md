@@ -44,7 +44,7 @@ The proxy server demonstrates core networking concepts, operating system concept
 ## Architecture
 
 ### UML Class Diagram
-![System Architecture](UML_Class_Diagram.png)
+![UML Class Diagram](UML_Class_Diagram.png)
 The architecture consists of three core components:
 
 1. **ProxyServer Class**:
@@ -80,7 +80,7 @@ The architecture consists of three core components:
 ## Request Processing
 
 ### Request Processing Flow
-![Thread Flow](Request_Processing.png)
+![Request Processing](Request_Processing.png)
 
 1. Client establishes TCP connection
 2. Semaphore slot acquisition (sem_wait())
@@ -112,7 +112,7 @@ The architecture consists of three core components:
 
 ## LRU Cache Implementation
 
-![Cache](Cache_Hit_and_Miss.jpg)
+![Cache Hit/Miss](Cache_Hit_and_Miss.jpg)
 
 1. **Cache Structure**:
   - Maximum size: 200MB
