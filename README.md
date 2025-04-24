@@ -111,7 +111,7 @@ The architecture consists of three core components:
 
 ## LRU Cache Implementation
 
-![Cache Hit/Miss](https://github.com/intakhab1/MultithreadedProxyServer//blob/main/Images/Cache_Hit_and_Miss.jpg)
+![Cache Hit/Miss](https://github.com/intakhab1/MultithreadedProxyServer/blob/main/Images/Cache_Hit_and_Miss.jpg)
 
 1. **Cache Structure**:
   - Maximum size: 200MB
