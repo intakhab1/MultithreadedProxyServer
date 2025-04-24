@@ -7,19 +7,18 @@ A high-performance web proxy server implementation using c++ with two variants:
 The proxy server demonstrates core networking concepts, operating system concepts, and caching algorithms.
 
 ## Table of Contents
-- [Features](#features)
-- [Architecture](#architecture)
-- [Implementation Details](#implementation-details)
-  - [Request Processing](#request-processing)
-  - [Thread Management](#thread-management)
-  - [LRU Cache Implementation](#LRU-Cache-Implementation)
-  - [Connection Handling](#connection-handling)
-  - [Concurrency Control](#concurrency-control)
-  - [Socket Management](#socket-management)
-- [Performance Comparison](#performance-comparison)
-- [Build & Run](#Build-Run)
-- [Conclusion](#Conclusion)
-- [Future Enhancements](#future-enhancements)
+- [Features](https://github.com/intakhab1/MultithreadedProxyServer#Features)
+- [Architecture](https://github.com/intakhab1/MultithreadedProxyServer#Architecture)
+- [Implementation Details](https://github.com/intakhab1/MultithreadedProxyServer#implementation-details)
+  - [Request Processing](https://github.com/intakhab1/MultithreadedProxyServer#request-processing)
+  - [Thread Management](https://github.com/intakhab1/MultithreadedProxyServer#thread-management)
+  - [LRU Cache Implementation](https://github.com/intakhab1/MultithreadedProxyServer#LRU-Cache-Implementation)
+  - [Concurrency Control](https://github.com/intakhab1/MultithreadedProxyServer#concurrency-control)
+  - [Socket Management](https://github.com/intakhab1/MultithreadedProxyServer#socket-management)
+- [Performance Comparison](https://github.com/intakhab1/MultithreadedProxyServer#performance-comparison)
+- [Build & Run](https://github.com/intakhab1/MultithreadedProxyServer#Build-Run)
+- [Conclusion](https://github.com/intakhab1/MultithreadedProxyServer#Conclusion)
+- [Future Enhancements](https://github.com/intakhab1/MultithreadedProxyServer#future-enhancements)
 
 ## Features
 
@@ -44,7 +43,7 @@ The proxy server demonstrates core networking concepts, operating system concept
 ## Architecture
 
 ### UML Class Diagram
-![UML Class Diagram](UML_Class_Diagram.png)
+![UML Class Diagram](https://github.com/intakhab1/MultithreadedProxyServer/blob/main/Images/UML_Class_Diagram.png)
 The architecture consists of three core components:
 
 1. **ProxyServer Class**:
@@ -80,7 +79,7 @@ The architecture consists of three core components:
 ## Request Processing
 
 ### Request Processing Flow
-![Request Processing](Request_Processing.png)
+![Request Processing](https://github.com/intakhab1/MultithreadedProxyServer/blob/main/Images/Request_Processing.png)
 
 1. Client establishes TCP connection
 2. Semaphore slot acquisition (sem_wait())
@@ -112,7 +111,7 @@ The architecture consists of three core components:
 
 ## LRU Cache Implementation
 
-![Cache Hit/Miss](Cache_Hit_and_Miss.jpg)
+![Cache Hit/Miss](https://github.com/intakhab1/MultithreadedProxyServer//blob/main/Images/Cache_Hit_and_Miss.jpg)
 
 1. **Cache Structure**:
   - Maximum size: 200MB
@@ -150,7 +149,7 @@ The architecture consists of three core components:
 ## Performance Comparison
 
 ### Cache vs No-Cache Comparison
-![cache vs no-cache](Request_Time_comparision.jpg)
+![cache vs no-cache](https://github.com/intakhab1/MultithreadedProxyServer/blob/main/Images/Request_Time_comparision.jpg)
 
 **Key Observations**:
   - First Request	715ms(cached)	716ms(non-cached)
