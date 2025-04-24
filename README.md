@@ -156,12 +156,19 @@ The architecture consists of three core components:
   - Repeat Request	23ms (31x faster)(cached)	729ms(non-cached)
   - CPU Utilization	69%(cached)	1%(non-cached)
 
+![cache vs no-cache](https://github.com/intakhab1/MultithreadedProxyServer/blob/main/Images/With_and_Without_Caching.jpg)
+
 **Key Findings**:
-1. Cold Start: Both implementations perform similarly
-2. Warm Cache: Dramatic 31x speed improvement 
-3. Resource Usage:
-  - Cached version uses more CPU (local processing)
-  - Uncached version is I/O bound (network latency)
+1. Cached Proxy Performance:
+  - Avg. latency: 0.33ms (near-instant, using cache)
+  - Throughput: 3,023 req/s (consistent with in-memory operations)
+  - 100% of requests completed in 2ms max
+  - The 454x performance difference (3,023 vs 6.66 req/s) ~99.8% cache hit ratio
+
+
+2. Uncached Proxy Performance:
+  - Avg. latency: 150ms 
+  - Throughput: 6.66 req/s (origin server limits)
 
 ## Build & Run
 
